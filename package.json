@@ -2,7 +2,7 @@
   "name": "maxbot",
   "version": "1.0.0",
   "description": "Discord bot for posting random Madeline Khan and Mel Brooks gifs (via Tenor API)",
-  "main": "bot.js",
+  "main": "max.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,6 @@
   "dependencies": {
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
-    "node-fetch": "^3.2.2"
+    "node-fetch": "2.6.7"
   }
 }
