@@ -6,7 +6,6 @@ module.exports = async function (msg, tokens) {
   try {
     let gif = defaultGif;
     let results = [];
-    console.log(tokens);
     if (tokens.length > 0) {
       if (tokens[0] === "kahn" || tokens[0] === "madeline") {
         // Tenor random of Madeline Kahn
@@ -19,7 +18,6 @@ module.exports = async function (msg, tokens) {
       // Tenor random of both
       let terms = ["madeline kahn", "mel brooks"];
       let index = Math.floor(Math.random() * terms.length);
-      console.log(terms[index]);
       results = await getTenorRandom(terms[index]);
     }
     if (results.length > 0) {
