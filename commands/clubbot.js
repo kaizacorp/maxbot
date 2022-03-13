@@ -1,5 +1,6 @@
 const fetch = require("node-fetch");
-const defaultGif = "https://tenor.com/view/goodtobeking-theking-gif-18473067";
+const defaultGif =
+  "https://tenor.com/view/jurrasic-park-samuel-l-jackson-magic-word-you-didnt-say-the-magic-work-gif-3556977";
 const limit = 1;
 
 module.exports = async function (msg, tokens) {
