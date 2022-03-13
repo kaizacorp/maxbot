@@ -1,7 +1,6 @@
 const clubbot = require("./commands/clubbot.js");
-const help = require("./commands/help.js");
 
-const commands = { clubbot, help };
+const commands = { clubbot };
 
 module.exports = async function (msg) {
   let tokens = msg.content;
