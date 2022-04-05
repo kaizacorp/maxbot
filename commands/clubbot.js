@@ -8,10 +8,11 @@ module.exports = async function (msg, tokens) {
     let gif = defaultGif;
     let results = [];
     if (tokens.length > 0) {
-      if (tokens[0] === "kahn" || tokens[0] === "madeline") {
+      let name = tokens[0].toLowerCase();
+      if (name === "kahn" || name === "madeline") {
         // Tenor random of Madeline Kahn
         results = await getTenorRandom("madeline kahn");
-      } else if (tokens[0] === "brooks" || tokens[0] === "mel") {
+      } else if (name === "brooks" || name === "mel") {
         // Tenor random of Mel Brooks
         results = await getTenorRandom("mel brooks");
       }
