@@ -8,6 +8,7 @@ module.exports = async function (msg) {
     tokens = tokens.replace(/["“”]+/g, '"');
     tokens = tokens.replace(/[,]+/g, " ");
     tokens = tokens.match(/(?:[^\s"]+|"[^"]*")+/g);
+    tokens = tokens.toLowerCase();
     let command = "";
     if (tokens) {
       command = tokens.shift();
