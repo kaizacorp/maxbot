@@ -32,7 +32,7 @@ module.exports = async function (msg, tokens) {
 };
 
 async function getTenorRandom(terms) {
-  let apiURL = `https://g.tenor.com/v1/random?q=${terms}&key=${process.env.TENORKEY}&limit=${limit}`;
+  let apiURL = `https://g.tenor.com/v1/random?q=${terms}&key=${process.env.TENORKEY}&limit=${limit}&contentfilter=high&media_filter=minimal&locale=en_US`;
   let results = [];
   try {
     let response = await fetch(apiURL);
